@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/PrimaryColor">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:layout_marginTop="125dp">
+
+        <EditText
+            android:layout_marginTop="50dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="USERNAME"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:background="#ffffff"
+            android:textColorHint="#ff868686"
+            android:id="@+id/usernameTextFieldForm"/>
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="PASSWORD"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:background="#ffffff"
+            android:inputType="textPassword"
+            android:textColorHint="#ff868686"
+            android:id="@+id/passwordTextFieldForm"/>
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="VERIFY PASSWORD"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:background="#ffffff"
+            android:inputType="textPassword"
+            android:textColorHint="#ff868686"
+            android:id="@+id/verifyPasswordTextFieldForm"/>
+
+        <Button
+            android:layout_marginTop="35dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Sign Up"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:background="@color/DarkPrimaryColor"
+            android:id="@+id/signUpFormButton"/>
+
+    </LinearLayout>
+
+</LinearLayout>
