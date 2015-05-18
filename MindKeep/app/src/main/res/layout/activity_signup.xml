@@ -1,12 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:background="@color/PrimaryColor">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PrimaryColor"
+    android:id="@+id/signUpScroll">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:orientation="vertical"
-        android:layout_marginTop="125dp">
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/mindkeep_logo"/>
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="12.5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="22dp"
+                android:text="@string/app_name"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="Sign Up to access your notes from anywhere."
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:textSize="14dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <EditText
             android:layout_marginTop="50dp"
@@ -60,6 +106,18 @@
             android:background="@color/DarkPrimaryColor"
             android:id="@+id/signUpFormButton"/>
 
+        <Button
+            android:layout_marginTop="5dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text="Cancel"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/cancelFormButton"/>
+
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>

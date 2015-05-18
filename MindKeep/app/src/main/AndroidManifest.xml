@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.anatoliyadamitskiy.a_adamitskiy_android_usersanddata" >
+    package="com.anatoliyadamitskiy.mindkeep" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -13,8 +13,8 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
-            android:label="EverKeep"
+            android:name="com.anatoliyadamitskiy.mindkeep.MainActivity"
+            android:label="MindKeep"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,23 +22,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DetailActivity"
+        <activity android:name="com.anatoliyadamitskiy.mindkeep.DetailActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".NewNoteActivity"
-            android:label="New Note"
+        <activity android:name="com.anatoliyadamitskiy.mindkeep.NewNoteActivity"
+            android:label="New Simple Note"
             android:screenOrientation="portrait"/>
-        <activity android:name=".NewListNoteActivity"
+        <activity android:name="com.anatoliyadamitskiy.mindkeep.NewListNoteActivity"
             android:label="New List Note"
             android:screenOrientation="portrait"/>
-        <activity android:name=".NewImageNoteActivity"
+        <activity android:name="com.anatoliyadamitskiy.mindkeep.NewImageNoteActivity"
             android:label="New Image Note"
             android:screenOrientation="portrait" />
-        <activity android:name=".LogInActivity"
+        <activity android:name="com.anatoliyadamitskiy.mindkeep.LogInActivity"
             android:theme="@style/AppBaseThemeNoActionBar"
             android:screenOrientation="portrait"/>
-        <activity android:name=".SignUpActivity"
+        <activity android:name="com.anatoliyadamitskiy.mindkeep.SignUpActivity"
             android:theme="@style/AppBaseThemeNoActionBar"
             android:screenOrientation="portrait"/>
+        <activity android:name="com.anatoliyadamitskiy.mindkeep.ImageDetailActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

@@ -1,41 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_weight=".1"
         android:hint=" Title"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
-        android:background="#ffd8d8d8"
-        android:gravity="center"
+        android:inputType="textAutoCorrect"
         android:id="@+id/titleTextFieldList"/>
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_weight=".8"
+        android:layout_height="wrap_content"
+        android:layout_weight=".2"
         android:layout_gravity="center"
-        android:hint=" Note"
-        android:background="#ffd8d8d8"
+        android:hint=" Description"
         android:layout_marginTop="5dp"
-        android:gravity="center"
-        android:id="@+id/noteTextFieldList"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_weight=".1"
-        android:layout_gravity="center"
-        android:hint=" Hours to Complete"
-        android:background="#ffd8d8d8"
-        android:layout_marginTop="5dp"
-        android:gravity="center"
-        android:layout_marginBottom="10dp"
-        android:id="@+id/hoursTextFieldList"
-        android:inputType="number" />
+        android:inputType="textMultiLine"
+        android:id="@+id/noteTextFieldList"
+        android:maxLines="100" />
 
 </LinearLayout>
+
+</ScrollView>
